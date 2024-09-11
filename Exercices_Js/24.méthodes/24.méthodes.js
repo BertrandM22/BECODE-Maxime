@@ -12,12 +12,12 @@ let user = {
       this.age += 1;
       console.log(this.age, this.secondName);
 
-      console.log( this.secondName);
+      console.log( this.secondName); 
       
       },
       printAge: function () {
-        console.log (`je suis`,this.firstName, this.secondName,`et j'ai`,this.age)
         
+        return console.log (`je suis`,this.firstName, this.secondName,`et j'ai`,this.age);
       }
     }
   
