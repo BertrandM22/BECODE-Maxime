@@ -50,9 +50,3 @@ do { numberU= prompt(" ecris un nombre de 1 et le nombre que tu as choisi")
          if (isNaN(numberU))  { alert(" Attention les lettre ne fonctionne pas.")}
     
 } while (numberM !== numberU);
-
-
-
-
-
-
