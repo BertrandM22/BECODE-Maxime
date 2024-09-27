@@ -13,8 +13,8 @@ function letter(tab1, tab2) {
     let tab4=[]
     
   }
-  
- return new Set(tab3)
+  tab4=new Set(tab3)
+ return Array.from(tab4)
     
   
   // tab3= tab2.map()

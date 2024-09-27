@@ -1,6 +1,5 @@
 function rev(a) {
-    
-  result= a.replace(" ","")
-    console.log (result.split(" ").reverse())
-    
+  result = a.replace(" ", "");
+
+  console.log(result.split(" ").reverse().join(" "));
 }
