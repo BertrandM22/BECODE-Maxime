@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="DOM03.js"></script>
+</head>
+
+<body>
+
+    <body>
+        <h1>Score Keeper</h1>
+        <div>
+          <span id="player1">0</span> to <span id="player2">0</span>
+        </div>
+        <button id="btn1">Player 1 +1</button>
+        <button id="btn2">Player 2 +1</button>
+      
+        <script>
+             
+          let numbers1 = 0;
+          let numbers2 = 0;
+      
+        
+          const player1 = document.getElementById("player1");
+          const player2 = document.getElementById("player2");
+          const btn1 = document.getElementById("btn1");
+          const btn2 = document.getElementById("btn2");
+      
+          
+          function checkWin() {
+            if (numbers1 === 5 || numbers2 === 5) {
+              
+              btn1.disabled = true;
+              btn2.disabled = true;
+              alert((numbers1 === 5) ? "Player 1 wins!" : "Player 2 wins!");
+            }
+          }
+      
+          
+          btn1.addEventListener("click", () => {
+            numbers1 += 1;
+            player1.innerText = numbers1;
+            checkWin();
+          });
+      
+         
+          btn2.addEventListener("click", () => {
+            numbers2 += 1;
+            player2.innerText = numbers2;
+            checkWin();
+          });
+        </script>
+      </body>
+</body>
+
+</html>

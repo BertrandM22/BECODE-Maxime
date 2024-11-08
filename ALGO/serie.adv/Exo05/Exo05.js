@@ -9,5 +9,5 @@ function revers(word) {
     
     boum += newword[i];
   }
-  console.log(boum.split(" "));
+  console.log(boum.split(" ").join(" "));
 }

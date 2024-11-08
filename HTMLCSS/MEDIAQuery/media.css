@@ -1,0 +1,48 @@
+/* création mobile */
+body{
+    background-color: gold;
+}
+h2{
+    display: none;
+}
+.a{
+    display: block;
+}
+@media screen and (min-width:768px){
+    body {
+        background-color: pink;
+         }
+         .a{
+            display: none;
+         }
+         .b{display: block;}
+}
+@media screen and ( min-width: 1280px) { 
+    body{
+        background-color: chocolate;
+    }
+    .b{
+        display: none;
+    }
+    .c{display: block;}  
+}
+
+@media screen and ( min-width: 1440px) { 
+    body{
+        background-color: cadetblue;
+    }
+    .c{
+        display: none;
+    }
+    .d{display: block;} 
+}
+
+@media screen and ( min-width: 1920px) { 
+    body{
+        background-color: cornflowerblue;
+    }
+    .d{
+        display: none;
+    }
+    .e{display: block;}
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulaire de validation</title>
+        <link rel="stylesheet" href="DOM05.css">
+        <script defer src="DOM05.js"></script>
+    </head>
+    <body>
+    <div>
+        <form id="myForm">
+            <label for="username">Nom d'utilisateur</label>
+            <input class="formu" type="text" id="username" name="username"/>
+            <p class="msg" id="username-msg">Probleme c'est pas bon</p>
+            <br>
+    
+            <label for="email">e-mail</label>
+            <input class="formu" type="text" id="email" name="email"/>
+            <p class="msg" id="email-msg">Probleme c'est pas bon</p>
+            <br>
+    
+            <label for="password">mot de passe</label>
+            <input class="formu" type="password" id="password" name="password"/>
+            <p class="msg" id="password-msg">Probleme c'est pas bon</p>
+            <br>
+    
+            <label for="confirm-password">confirmation de mot de passe</label>
+            <input class="formu" type="password" id="confirm-password" name="confirm-password"/>
+            <p class="msg" id="confirm-password-msg">Probleme c'est pas bon</p>
+            <br>
+    
+            <input type="submit" value="Envoyer le formulaire"/>
+            <p class="msg" id="form-msg">Probleme c'est pas bon</p>
+        </form>
+    </div>
+    </body>
+    </html>
+<!-- Votre formulaire doit demander :
+nom d'utilisateur
+e-mail
+mot de passe
+confirmation du mot de passe
+Il devrait également y avoir un bouton pour soumettre le formulaire.
+Faites-le joli ! Un peu de style en CSS vous aidera. (C'est une bonne occasion de vous familiariser avec le style des entrées de formulaire. Cela peut être assez frustrant parfois :()
+Sous chaque entrée, placez un paragraphe avec la classe « msg ». 
+Ces paragraphes ne doivent apparaître qu'en cas d'erreur ou de réussite lors de la soumission.
+Lors de la soumission, le texte d'une saisie réussie doit être vert et rouge s'il y a une erreur.
+Le message devrait dire quelque chose comme : Must be at least 5 charactersetc.
+La validation doit être la suivante :
+usernamedoit être uniquement en minuscules et comporter au moins 5 caractères et au plus 10 caractères.
+emaildoit être une adresse e-mail valide (apprenez-en plus sur le concept regexet trouvez sur Google une expression régulière qui teste si une chaîne est dans un format d'e-mail correct. Utilisez la matchméthode pour tester une chaîne par rapport à une expression régulière.)
+passworddoit comporter au moins 8 caractères et au plus 15 caractères.
+password confirmationdevrait être le même quepassword
+Une fois tous les tests réussis et que tout est vert, lorsque vous soumettez, les valeurs d'entrée doivent être enregistrées dans la console.
+ -->

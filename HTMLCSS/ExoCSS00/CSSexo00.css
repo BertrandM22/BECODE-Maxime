@@ -1,0 +1,28 @@
+body{
+    background-color:  hsl(39, 6%, 83%);
+    }
+    .content{color: rgb(60, 112, 91);}
+
+ h1{
+    color: rgb(12, 37, 134);
+} 
+.sp1{ color:#d69e36 ;
+
+
+}
+.menu  li:nth-child(1)>a{  color: rgb(134, 12, 110);
+}
+.menu  li:nth-child(2)>a{  color: rgb(134, 12, 110);
+}
+.menu > li:nth-child(3)>a{  color: rgb(134, 12, 110);
+}
+
+.menu > li:nth-child(1n+1)>a> span{color:red}
+
+div>ul :nth-child(2) {background-color:  rgb(142, 41, 179)}
+div>ul :nth-child(1n+1)>a>span   {color:  rgb(14, 86, 96)}
+
+div ul:last-child{
+    background-color:   hsl(39, 21%,  73% )};
+
+
